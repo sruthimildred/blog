@@ -35,7 +35,7 @@ function LoginPage() {
     return (
                 <div >
                     <form onSubmit={handleSubmit}>
-                    {Object.keys(formErrorValues).length === 0 && isSubmit ? (<Navigate to='/' />) : (<div>Please Login</div>)}
+                    {Object.keys(formErrorValues).length === 0 && isSubmit ? (<Navigate to='/articles-list' />) : (<div>Please Login</div>)}
 
                         <label for="chk" aria-hidden="true">Login</label>
                         <input type="email" name="email" placeholder="Email" required=""value={formValues.email} onChange={handleChange}/>
